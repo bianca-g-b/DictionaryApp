@@ -1,8 +1,8 @@
 import './App.css';
 import {useState, useEffect} from 'react';
-import Dictionary from './Dictionary/Dictionary';
+import Dictionary from '../Dictionary/Dictionary';
 import ReactAudioPlayer from 'react-audio-player';
-import Audio from './Audio/Audio';
+import Audio from '../Audio/Audio';
 
 function App() {
 // set useState for input
