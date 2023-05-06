@@ -1,5 +1,12 @@
 /*Styles*/
 
+html {
+  display: flex;
+  height:100%;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
 .input-area {
   display: flex;
   flex-direction: column;
@@ -7,31 +14,33 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  /* background-color: aliceblue; */
+}
+
+#root{
+  display:flex;
+  
 
 }
-#root{
-  height: 100%;
-  width: 100%;
-  /* position: absolute; */
-}
 body {
-  position: absolute;
+  display: flex;
+  /* flex: 100% 1 0; */
+  flex-wrap: wrap;
   height:100%;
   width:100%;
   background-color:rgb(111, 133, 118);
   font-family: 'Roboto', sans-serif;
-  
+  justify-content: center;
+  align-items: center;
 }
 .word {
-  margin-bottom: 5px;;
+  margin-bottom: 5%;;
 }
 
 .definitions {
-  margin-top: 15px;
+  margin-top: 5%;
 }
 .definitions-list {
-  margin-bottom: 25px;
+  margin-bottom: 5%;
 }
 
 .search-area {
@@ -39,31 +48,32 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* border-radius: 12px; */
+  border-radius: 12px;
+  width: 50%;
 }
 
 input {
   border-radius: 12px;
   border: 1px solid #b4b8f8;
-  padding: 5px;
-  margin-right: 5px;
+  padding: 2%;
+  margin-right: 1%;
 }
 button {
   border-radius: 7px;
   border: 1px solid #020721;
-  padding: 5px;
-  margin-left: 5px;
-  background-color: #1a54f5;
+  padding: 2%;
+  margin-left: 2%;
+  background-color: #134e39;
   color: white;
   cursor: pointer;
 }
 button:hover {
-  background-color: #7b4f89;
+  background-color: #394d08;
 }
 .search-results {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 3%;
   background-color: #eaeefb;
   border-radius: 12px;
   padding: 2%;
@@ -71,24 +81,24 @@ button:hover {
 }
 
 .meaning-area {
-  display: flex;
+  /* display: flex; */
   border-top: 1px solid #22286b;
 }
 
 .all-defs {
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
 }
 
 .audio-player {
-  margin-bottom: 15px;
+  margin-bottom: 2%;
 }
 
 .definitions-list {
   margin: 0;
-  padding: 5px;
+  padding: 2%;
   list-style: circle;
 }
 
@@ -98,5 +108,59 @@ button:hover {
   font-weight: bold;
   text-decoration-style: wavy;
 }
+
+.input-box {
+ height: 60%;
+ width: 130%;
+ font-size: large;
+ font-weight: bold;
+}
+
+.search-button {
+  height: 60%;
+  width: 40%;
+  font-size: large;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+/* Set content to shrink on small size screens */
+@media screen and (max-width: 600px) {
+  .search-results {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+
+  }
+  
+  .input-area {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .root {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
+
+
 
 

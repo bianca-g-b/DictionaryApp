@@ -68,10 +68,12 @@ function handleSubmit(e) {
 
   return (
     <div className= "input-area">
+    <div className="header">
       <h1>Simplified dictionary</h1>
+      </div>
       <div className="search-area">
-      <input  onChange={handleInput}  placeholder="Type word here" text="Search"/>
-      <button onClick={handleSubmit}>Click to search</button>
+      <input  className="input-box" onChange={handleInput}  placeholder="Type word here" text="Search"/>
+      <button className="search-button" onClick={handleSubmit}>Search</button>
       </div>
       <div className="search-results">
         <h2>Search results</h2>
