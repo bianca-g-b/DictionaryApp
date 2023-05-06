@@ -78,6 +78,9 @@ button:hover {
   border-radius: 12px;
   padding: 2%;
   border: 1px solid #919afc;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .meaning-area {
@@ -131,15 +134,15 @@ button:hover {
   margin-bottom: 5%;
 }
 
-/* Set content to shrink on small size screens */
+/* Media styling */
 @media screen and (max-width: 600px) {
   .search-results {
     height: 100%;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
 
   }
   
@@ -156,6 +159,24 @@ button:hover {
     justify-content: center;
     align-items: center;
   }
+
+  audio {
+    width: 200px;
+    height: 54px;
+}
+
+.search-area {
+  width: 80%;
+}
+.search-button {
+  height: 60%;
+  width: 40%;
+  font-size: large;
+  font-weight: bold;
+}
+.input-box {
+  width: 100%;
+}
 
 }
 

@@ -69,15 +69,17 @@ function handleSubmit(e) {
   return (
     <div className= "input-area">
     <div className="header">
-      <h1>Simplified dictionary</h1>
+      <h1>Simple Dictionary</h1>
       </div>
+
       <div className="search-area">
       <input  className="input-box" onChange={handleInput}  placeholder="Type word here" text="Search"/>
       <button className="search-button" onClick={handleSubmit}>Search</button>
       </div>
+
       <div className="search-results">
-        <h2>Search results</h2>
-        <h3>{word} {phonetic}</h3>
+        {/* <h2>Search results</h2> */}
+        <h2>{word} {phonetic}</h2>
         <Audio audioFile={audioFile} onPlay={handleAudio}/>
        
         <Dictionary typeDefs={typeDefs}/>
