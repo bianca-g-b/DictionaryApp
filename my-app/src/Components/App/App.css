@@ -49,14 +49,18 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  width: 50%;
+  width: 57%;
 }
 
-input {
+.input-box {
   border-radius: 12px;
   border: 1px solid #b4b8f8;
   padding: 2%;
   margin-right: 1%;
+  height: 60%;
+  width: 130%;
+  font-size: large;
+  font-weight: bold;
 }
 button {
   border-radius: 7px;
@@ -112,16 +116,9 @@ button:hover {
   text-decoration-style: wavy;
 }
 
-.input-box {
- height: 60%;
- width: 130%;
- font-size: large;
- font-weight: bold;
-}
-
 .search-button {
   height: 60%;
-  width: 40%;
+  width: 45%;
   font-size: large;
   font-weight: bold;
 }
