@@ -1,5 +1,5 @@
 import {test, expect} from "@jest/globals";
-import {render, screen, fireEvent} from "@testing-library/react";
+import {render, screen} from "@testing-library/react";
 import Dictionary from "./Dictionary";
 
 // Write test that verifies the list and list items functionality
