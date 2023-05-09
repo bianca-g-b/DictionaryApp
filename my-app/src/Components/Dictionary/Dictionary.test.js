@@ -5,7 +5,7 @@ import Dictionary from "./Dictionary";
 // Write test that verifies the list and list items functionality
 
 test ("list and listitems show on screen after generated", ()=> {
-// store props in an array for the input "cork"
+// store props in an array of objects for the input "cork"
 const typeDefs = [{
     type : ["noun", "verb"],
     defs: [
@@ -29,7 +29,7 @@ render (<Dictionary typeDefs={typeDefs}/>);
 const list = screen.getAllByRole("list");
 const listitems = screen.getAllByRole("listitem");
 
-// test if the list has length of 2, and if list has length of 11
+// test if list has length of 2, and if listitems has length of 11
 
 expect(list).toHaveLength(2);
 expect(listitems).toHaveLength(11);
