@@ -73,19 +73,20 @@ function handleInput(e) {
   return (
     <div className= "input-area">
     <div className="header">
-      <h1>Simple Dictionary</h1>
+      <h1 className="title">Simple Dictionary</h1>
       </div>
 
       <div className="search-area">
-      <input  className="input-box" onChange={handleInput} value={userInput} placeholder="Type word here" text="Search"/>
+      <input  className="input-box" onChange={handleInput} value={userInput} placeholder=" Type word here" text="Search"/>
       <button className="search-button" onClick={handleSubmit}>Search</button>
       </div>
-
+      {word && 
       <div className="search-results">
         <h2>{word} {phonetic}</h2>
         <Audio audioFile={audioFile} onPlay={handleAudio}/>
         <Dictionary typeDefs={typeDefs}/>
         </div>
+      }
     </div>
   );
 

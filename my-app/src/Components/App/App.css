@@ -23,7 +23,6 @@ html {
 }
 body {
   display: flex;
-  /* flex: 100% 1 0; */
   flex-wrap: wrap;
   height:100%;
   width:100%;
@@ -49,19 +48,20 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  width: 57%;
 }
 
 .input-box {
-  border-radius: 12px;
+  border-radius: 7px;
   border: 1px solid #b4b8f8;
-  padding: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   margin-right: 1%;
   height: 60%;
-  width: 130%;
   font-size: large;
   font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 button {
   border-radius: 7px;
   border: 1px solid #020721;
@@ -70,10 +70,16 @@ button {
   background-color: #134e39;
   color: white;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 button:hover {
-  background-color: #394d08;
+  background-color: #22286b;
 }
+
+.title {
+  color: #0b2f23;
+}
+
 .search-results {
   display: flex;
   flex-direction: column;
@@ -85,10 +91,10 @@ button:hover {
   margin-bottom: 2%;
   margin-left: 2%;
   margin-right: 2%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .meaning-area {
-  /* display: flex; */
   border-top: 1px solid #22286b;
 }
 
@@ -106,7 +112,7 @@ button:hover {
 .definitions-list {
   margin: 0;
   padding: 2%;
-  list-style: circle;
+  /* list-style: circle; */
 }
 
 .type {
@@ -118,7 +124,6 @@ button:hover {
 
 .search-button {
   height: 60%;
-  width: 45%;
   font-size: large;
   font-weight: bold;
 }
@@ -129,6 +134,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 5%;
+  text-align: center;
 }
 
 /* Media styling */
@@ -145,7 +151,6 @@ button:hover {
   
   .input-area {
     height: 100%;
-    width: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -162,19 +167,28 @@ button:hover {
     height: 54px;
 }
 
-.search-area {
-  width: 80%;
-}
 .search-button {
   height: 60%;
-  width: 40%;
   font-size: large;
   font-weight: bold;
 }
-.input-box {
-  width: 100%;
 }
 
+@media screen and (max-width: 360px) {
+  .search-area {
+    flex-direction: column;
+  }
+  .input-box {
+    margin-bottom: 3%;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-right: 0 !important;
+  }
+  .search-button {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 
