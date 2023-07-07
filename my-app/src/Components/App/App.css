@@ -40,6 +40,15 @@ body {
 }
 .definitions-list {
   margin-bottom: 5%;
+  list-style-position: inside;
+  line-height: 1.25em;
+  border: 1px solid #b4b8f8;
+  border-radius: 7px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.definition-item{
+  padding-bottom: 0.5%;
 }
 
 .search-area {
@@ -64,16 +73,17 @@ body {
 
 button {
   border-radius: 7px;
-  border: 1px solid #020721;
+  border: 1px solid #093727;
   padding: 2%;
   margin-left: 2%;
-  background-color: #134e39;
+  background-image: linear-gradient(to right, #134e39 0%, #175f45  51%, #266a78   100%);
+  transition: 0.5s;
   color: white;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 button:hover {
-  background-color: #22286b;
+  background-image: linear-gradient(to right, #22286b 0%, #353c88  51%, #4d69bc   100%);
 }
 
 .title {
@@ -133,7 +143,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   text-align: center;
 }
 
@@ -190,9 +200,5 @@ button:hover {
     margin-left: 0;
   }
 }
-
-
-
-
 
 

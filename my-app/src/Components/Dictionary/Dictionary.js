@@ -11,7 +11,7 @@ function Dictionary(props) {
           <h4 className = "definitions">Definitions</h4>
           <ul className= "definitions-list">
             {props.typeDefs[0].defs[index].map((def, i) => (
-              <li key={uuidv4()}>{def}</li>
+              <li className="definition-item" key={uuidv4()}>{def}</li>
             ))}
           </ul>
         </div>
