@@ -6,4 +6,4 @@ The app provides the definitions of the word and audio pronunciation.
 
 
 Test the app here: 
-https://github.com/bianca-g-b/DictionaryApp
+https://bianca-g-b.github.io/DictionaryApp/
